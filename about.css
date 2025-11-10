@@ -1,0 +1,123 @@
+.backgroundContainer {
+    position: relative;
+}
+
+.backgroundContainer img {
+    width: 100%;
+    filter: brightness(0.7);
+}
+
+.backgroundContainer .center {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    bottom: 60%;
+}
+
+.backgroundContainer .center p {
+    font-size: 5vw;
+}
+
+.title {
+    text-align: center;
+    font-size: 55px;
+    font-family: cursive;
+}
+
+.textContainer {
+    margin: 30px 15%;
+    text-align: center;
+    display: flex;
+    gap: 5%;
+}
+
+.textContainer .box {
+    width: 33.333%;
+}
+
+.textContainer .box h1 {
+    font-size: 30px;
+}
+
+.textContainer .box p {
+    font-size: 20px;
+    filter: brightness(0.8);
+}
+
+/*Laptop 1024*/
+@media screen and (max-width: 1024px) {   
+    .backgroundContainer .center p {
+        font-size: 6vw;
+    }
+    
+    .title {
+        font-size: 50px;
+    }
+
+    .textContainer {
+        margin: 20px 7%;
+    }
+
+    
+}
+
+/*Tablet*/
+@media screen and (max-width: 768px) {   
+    .backgroundContainer .center p {
+        font-size: 6.5vw;
+    }
+    
+    .title {
+        font-size: 40px;
+    }
+
+    .textContainer {
+        flex-direction: column;
+        margin: 30px 10%;
+        gap: 10px;
+    }
+
+    .textContainer .box{
+        width: 100%;
+    }
+
+    .textContainer .box h1 {
+        font-size: 26px;
+    }
+
+    .textContainer .box p {
+        font-size: 18px;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px) {   
+    .backgroundContainer .center {
+        top: 20%;
+    }
+    
+    .backgroundContainer .center p {
+        font-size: 8vw;
+    }
+
+    .container {
+        position: relative;
+        top: 38px;
+    }
+    
+    .title {
+        font-size: 30px;
+    }
+
+    .textContainer {
+        margin: 30px 7%;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .container {
+        position: relative;
+        top: 27px;
+    }
+}

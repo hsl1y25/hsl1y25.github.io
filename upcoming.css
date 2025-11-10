@@ -1,0 +1,264 @@
+.backgroundContainer {
+    position: relative;
+}
+
+.backgroundContainer img {
+    width: 100%;
+    filter: brightness(0.7);
+}
+
+.backgroundContainer .center {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    bottom: 60%;
+}
+
+.backgroundContainer .center p {
+    font-size: 5vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 10%;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+.left {
+    border-right: 4px solid white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left .date {
+    text-align: right;
+    font-size: 2vw;
+    padding-right: 30px;
+}
+
+.left .game {
+    background-color: rgb(28, 28, 29);
+    margin: 30px;
+    box-shadow: 6px 6px 10px rgba(28, 28, 29, 0.7);
+    transition: transform 0.4s ease;
+    border-radius: 20px;
+}
+
+.left .game:hover {
+    transform: scale(1.02);
+}
+
+.left .game img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.left .game .text {
+    padding: 0 3%;
+}
+
+.left .game .text ul {
+    margin: 0;
+    padding: 0;
+   
+}
+
+.left .game .text ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 2px 1%;
+    padding: 1% 2%;
+    background-color: rgb(57, 65, 72);
+    border-radius: 5px;
+}
+
+.left .game .text ul li:hover {
+    filter: brightness(1.0);
+}
+
+.right {
+    border-left: 4px solid white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right .date {
+    text-align: left;
+    font-size: 2vw;
+    padding-left: 30px;
+}
+
+.right .game {
+    background-color: rgb(28, 28, 29);
+    margin: 30px;
+    box-shadow: 6px 6px 10px rgba(28, 28, 29, 0.7);
+    transition: transform 0.4s ease;
+    border-radius: 20px;
+}
+
+.right .game:hover {
+    transform: scale(1.02);
+}
+
+.right .game img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.right .game .text {
+    padding: 0 3%;
+}
+
+.right .game .text ul {
+    margin: 0;
+    padding: 0;
+   
+}
+
+.right .game .text ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 2px 1%;
+    padding: 1% 2%;
+    background-color: rgb(57, 65, 72);
+    border-radius: 5px;
+}
+
+.right .game .text ul li:hover {
+    filter: brightness(1.0);
+}
+
+
+
+/*Special Adjustment*/
+@media screen and (max-width: 567px) {
+    .backgroundContainer, 
+    .container,
+    .footer {
+        position: relative;
+        top: 38px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .backgroundContainer, 
+    .container,
+    .footer {
+        position: relative;
+        top: 27px;
+    }
+}
+
+/*Laptop 1024px*/
+@media screen and (max-width: 1024px) {
+    .container {
+        margin: 30px 5%;
+    }
+
+    .left .date, 
+    .right .date {
+        font-size: 2.5vw;
+        padding: 20px;
+    }
+
+    .left .game {
+        margin: 20px;
+    }
+    
+    .right .game {
+        margin: 20px;
+    }
+
+    .left .game .text h1,
+    .right .game .text h1 {
+        font-size: 1.5em;
+    }
+}
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 25px 3%;
+    }
+
+    .left .date, 
+    .right .date {
+        font-size: 3.5vw;
+        padding: 15px;
+    }
+
+    .left .game {
+        margin: 15px;
+    }
+    
+    .right .game {
+        margin: 15px;
+    }
+}    
+
+/*Mobile*/
+@media screen and (max-width: 425px) {
+    .backgroundContainer .center p {
+        font-size: 7vw;
+    }
+    
+    .container {
+        margin: 15px 1%;
+    }
+
+    .left {
+        border-right: 2px solid white;
+    }
+
+    .right {
+        border-left: 2px solid white;
+    }
+
+    .left .date, 
+    .right .date {
+        font-size: 5vw;
+        padding: 10px;
+    }
+
+    .left .game {
+        margin: 10px;
+    }
+    
+    .right .game {
+        margin: 10px;
+    }
+
+    .left .game .text h1,
+    .right .game .text h1 {
+        font-size: 1.2em;
+    }
+
+    .left .game .text p,
+    .right .game .text p {
+        font-size: 0.9em;
+    }
+
+    .left .game .text ul li,
+    .right .game .text ul li {
+        font-size: 0.7em;
+    }
+}
+
+
+
+
+
+

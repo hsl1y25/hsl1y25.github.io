@@ -1,0 +1,137 @@
+.container {
+    background-image: url(Images/Categories/OpenWorld/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 1% 10% 0 10%;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 3.5vw;
+    font-family: monospace;
+    text-align: center;
+}
+
+.threeImg {
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+}
+
+.gameCard {
+    width: 33.3333%;
+    text-align: center;
+}
+
+.gameCard:nth-child(2) {
+    position: relative;
+    left: 18%;
+    top: 8vw;
+}
+
+.gameCard:nth-child(3) {
+    position: relative;
+    left: 60%;
+    bottom: 25vw;
+}
+
+.gameCard img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.gameCard img:hover {
+    transform: scale(1.02);
+    transition: all 0.4s ease;
+}
+
+/*Laptop 1024*/
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 1% 7% 0 7%;
+    }
+
+    .title {
+        font-size: 4vw;
+    }
+
+    .gameCard {
+        width: 40%;
+    }
+
+    .gameCard:nth-child(2) {
+        position: relative;
+        left: 26%;
+    }
+
+    .gameCard:nth-child(3) {
+        position: relative;
+        left: 60%;
+        bottom: 38vw;
+    }
+}
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1% 5% 0 5%;
+    }
+
+    .title {
+        font-size: 4.8vw;
+    }
+
+    .gameCard {
+        width: 42%;
+    }
+
+    .gameCard:nth-child(2) {
+        position: relative;
+        left: 15%;
+        top: 10vw;
+    }
+
+    .gameCard:nth-child(3) {
+        position: relative;
+        left: 60%;
+        bottom: 45vw;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px) {
+    .title {
+        font-size: 8vw;
+    }
+
+    .gameCard {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .gameCard:nth-child(2) {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .gameCard:nth-child(3) {
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+/*Special*/
+@media screen and (max-width: 567px) {
+    .container {
+        margin-top: 38px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .container {
+        margin-top: 26px;
+    }
+}

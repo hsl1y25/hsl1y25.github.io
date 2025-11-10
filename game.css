@@ -1,0 +1,334 @@
+.all {
+    margin: 50px 10%;
+}
+
+/*Title*/
+.title {
+    font-size: 4vh;
+    margin: 0 0 5px 0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+/*Left Part*/
+.left {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/*Video and Image Gallery*/
+.gallery {
+    width: 100%;
+}
+
+.gallery .big {
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.gallery .big video,
+.gallery .big img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.gallery .small {
+    display: flex;
+    gap: 5px;
+}
+
+.gallery .small label {
+    width: 20%;
+}
+
+.gallery .small video,
+.gallery .small img {
+    width: 100%;
+}
+
+.gallery .small video:hover,
+.gallery .small img:hover {
+    filter: brightness(1.1);
+}
+
+.radio {
+    display: none;
+}
+
+#vid1:checked ~ .big #bvid1,
+#img1:checked ~ .big #bimg1,
+#img2:checked ~ .big #bimg2,
+#img3:checked ~ .big #bimg3,
+#img4:checked ~ .big #bimg4 {
+    opacity: 1;
+}
+
+/*About This Game*/
+.about h2 {
+    font-size: 3vh;
+    margin: 0;
+    padding-bottom: 2px;
+    border-bottom: 2px solid yellow;
+}
+
+.about p {
+    font-size: 2vh;
+    filter: brightness(0.8);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about p a {
+    text-decoration: underline;
+}
+
+/*Review*/
+.reviewContainer {
+    box-sizing: border-box;
+}
+
+.reviewContainer h2 {
+    font-size: 3vh;
+    margin: 0;
+    padding-bottom: 2px;
+    border-bottom: 2px solid yellow;
+}
+
+.review {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.reviewContainer a:hover {
+    filter: brightness(1.2);
+}
+
+.reviewCard {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(35, 36, 37);
+    align-items: center;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.reviewCard img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.reviewCard .title {
+    margin: 10px 0 0 0;
+    font-size: 2.2vh;
+    filter: brightness(0.8);
+}
+
+.reviewCard .ratingG,
+.reviewCard .ratingY,
+.reviewCard .ratingR,
+.reviewCard .ratingW {
+    margin: 15px 0;
+    font-size: 3.2vh;
+}
+
+.reviewCard .ratingG {
+    color: green;
+}
+
+.reviewCard .ratingY {
+    color: yellow;
+}
+
+.reviewCard .ratingR {
+    color: red;
+}
+
+.reviewCard .ratingW {
+    color: white;
+}
+
+.reviewCard .numRating {
+    font-size: 2vh;
+    margin: 0;
+    filter: brightness(0.8);
+}
+
+/*Recommended System Requirements*/
+.sysContainer {
+    box-sizing: border-box;
+}
+
+.sysContainer h2 {
+    font-size: 3vh;
+    margin: 0;
+    padding-bottom: 2px;
+    border-bottom: 2px solid yellow;
+}
+
+.sys {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: rgb(35, 36, 37);
+}
+
+.sys .aspect .top {
+    font-size: 1.7vh;
+    margin: 0;
+    filter: brightness(0.7);
+}
+
+.sys .aspect .bottom {
+    margin-top: 7px;
+    font-size: 2vh;
+}
+
+
+
+/*Right Part*/
+.right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right img {
+    width: 100%;
+}
+
+.right p {
+    font-size: 2vh;
+    margin: 0;
+}
+
+/*Tags*/
+.tag {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag p {
+    background-color: rgb(57, 65, 72);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 1.5vh;
+}
+
+/*Info*/
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2vh;
+}
+
+.subinfo {
+    display: flex;
+    gap: 10px;
+}
+
+.subinfo .left {
+    width: 30%;
+    margin: 0;
+    text-align: left;
+    filter: brightness(0.6);
+}
+
+.subinfo .right {
+    width: 70%;
+    margin: 0;
+    text-align: right;
+}
+
+
+/*Laptop 1024*/
+@media screen and (max-width: 1024px) {
+    .all {
+        margin: 50px 5%;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px) {
+    .sys {
+        padding: 30px;
+    }
+}
+
+/*Special*/
+@media screen and (max-width: 1166px) {
+    .reviewCard .ratingG,
+    .reviewCard .ratingY,
+    .reviewCard .ratingR {
+        font-size: 2.8vh;
+    }
+}
+
+@media screen and (max-width: 945px) {
+    .reviewCard .ratingG,
+    .reviewCard .ratingY,
+    .reviewCard .ratingR {
+        font-size: 2.5vh;
+    }
+}
+
+@media screen and (max-width: 878px) {
+    .container {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .reviewCard .title {
+        font-size: 2.5vh;
+    }
+
+    .reviewCard .ratingG,
+    .reviewCard .ratingY,
+    .reviewCard .ratingR {
+        font-size: 3.5vh;
+    }
+
+    .reviewCard .numRating {
+        font-size: 1.5vh;
+    }
+}
+
+@media screen and (max-width: 564px) {
+    .review {
+        flex-wrap: wrap;
+    }
+
+    .reviewCard {
+        width: 35%;
+    }
+}

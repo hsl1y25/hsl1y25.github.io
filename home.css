@@ -1,0 +1,333 @@
+/*Big Background Image*/
+.backgroundContainer {
+    position: relative;
+}
+
+.backgroundContainer img {
+    width: 100%;
+    filter: brightness(0.7);
+}
+
+.backgroundContainer .center {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    bottom: 60%;
+}
+
+.backgroundContainer .center p {
+    font-size: 5vw;
+    margin-bottom: 4%;
+}
+
+.backgroundContainer .center a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(6, 191, 255);
+    padding: 1.5% 2%;
+    font-size: 2vw;
+    border-radius: 25px; 
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; 
+    margin-right: auto;
+    white-space: nowrap;
+}
+
+.backgroundContainer .center a:hover {
+    filter: brightness(1.1);
+}
+
+.backgroundContainer .center a svg {
+    width: 2vw;
+    height: 2vw;
+}
+
+/*Trending Now*/
+.trending {
+    margin-top: 50px;
+}
+
+.trending .title {
+    text-align: center;
+    font-size: 4vw;
+    margin: 0;
+}
+
+#trendingNow {
+    scroll-margin-top: 120px;
+}
+
+.trending .card a {
+    display: flex;
+    background-color: rgb(28, 28, 29);
+    margin: 30px 20%;
+    box-shadow: 6px 6px 10px rgba(28, 28, 29, 0.7);
+    transition: transform 0.4s ease;
+}
+
+.trending .card a:hover {
+    transform: scale(1.02);
+}
+
+.trending .card img {
+    width: 60%;
+    height: auto;
+}
+
+.trending .card .text {
+    padding: 0 3%;
+    width: 40%;
+}
+
+.trending .card .text ul {
+    margin: 0;
+    padding: 0;
+   
+}
+
+.trending .card .text ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 2px 1%;
+    padding: 1% 3%;
+    background-color: rgb(57, 65, 72);
+    border-radius: 5px;
+}
+
+.trending .card .text ul li:hover {
+    filter: brightness(1.0);
+}
+
+/*News*/
+.news {
+    margin-top: 100px;
+}
+
+.news .title {
+    text-align: center;
+    font-size: 4vw;
+    margin: 0;
+}
+
+.news .newsContainer {
+    display: flex;
+    margin: 20px 15% 50px 15%;
+    gap: 20px;
+}
+
+.news .newsContainer img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.8);
+    border-radius: 20px;
+}
+
+.news .newsContainer .left {
+    width: 67.5%;
+    position: relative;
+    transition: transform 0.4s ease;
+}
+
+.news .newsContainer .left p {
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    font-size: 2vw;
+}
+
+.news .newsContainer .right {
+    width: 32.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news .newsContainer .right .top,
+.news .newsContainer .right .bottom {
+    position: relative;
+    transition: transform 0.4s ease;
+}
+
+.news .newsContainer .right .top p,
+.news .newsContainer .right .bottom p {
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    font-size: 1.5vw;
+} 
+
+.news .newsContainer .left:hover,
+.news .newsContainer .right .top:hover,
+.news .newsContainer .right .bottom:hover {
+    transform: scale(1.02);
+}
+
+
+
+
+/*Laptop 1024*/
+@media screen and (max-width: 1024px) {
+    .backgroundContainer .center p {
+        font-size: 6vw;
+    }
+
+    .backgroundContainer .center a {
+        font-size: 2.5vw;
+    }
+
+    .backgroundContainer .center a svg {
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+
+    .trending .title,
+    .news .title {
+        font-size: 5vw;
+    }
+
+    .trending .card a {
+        margin: 30px 10%;
+    }
+
+    .news .newsContainer {
+        margin: 20px 6% 50px 6%;
+    }
+
+    .news .newsContainer .left p {
+        font-size: 2.5vw;
+    }
+
+    .news .newsContainer .right .top p,
+    .news .newsContainer .right .bottom p {
+        font-size: 2vw;
+    } 
+}
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+    .backgroundContainer .center p {
+        font-size: 6.2vw;
+    }
+
+    .backgroundContainer .center a {
+        font-size: 2.8vw;
+    }
+
+    .trending .title,
+    .news .title {
+        font-size: 5.5vw;
+    }
+
+    .trending .card a {
+        display: block;
+        margin: 40px 10%;
+    }
+
+    .trending .card img {
+        width: 100%;
+    }
+
+    .trending .card .text {
+        width: 100%;
+    }
+
+    .news .newsContainer {
+        margin: 20px 3% 40px 3%;
+    }
+
+    .news .newsContainer .left p {
+        font-size: 3vw;
+    }
+
+    .news .newsContainer .right .top p,
+    .news .newsContainer .right .bottom p {
+        font-size: 2.2vw;
+    } 
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px) {
+    .backgroundContainer .center {
+        position: absolute;
+        top: 15%;
+        left: 3%;
+        bottom: 60%;
+    }
+    
+    .backgroundContainer .center p {
+        font-size: 8vw;
+    }
+
+    .backgroundContainer .center a {
+        font-size: 4vw;
+    }
+
+    .backgroundContainer .center a svg {
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .trending .title,
+    .news .title {
+        font-size: 7.5vw;
+    }
+
+    .trending .card a {
+        margin: 40px 5%;
+    }
+
+    .trending .card .text h1 {
+        font-size: x-large;
+    }
+
+    .trending .card .text ul,
+    .trending .card .text p {
+        font-size: medium;
+    }
+
+    .news .newsContainer {
+        display: block;
+        margin: 20px 3% 30px 3%;
+    }
+
+    .news .newsContainer .left {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .news .newsContainer .right {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .news .newsContainer .left p {
+        font-size: 5vw;
+    }
+
+    .news .newsContainer .right .top p,
+    .news .newsContainer .right .bottom p {
+        font-size: 5vw;
+    } 
+}
+
+/*Special*/
+@media screen and (max-width: 567px) {
+    .backgroundContainer {
+        margin-top: 38px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .backgroundContainer {
+        margin-top: 26px;
+    }
+}
+
+
+
+
+
+
+
+

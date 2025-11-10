@@ -1,0 +1,168 @@
+.container {
+    background-image: url(Images/Categories/Adventure/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 1% 10% 0 10%;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 3.5vw;
+    font-family: monospace;
+    color: black;
+    text-align: center;
+}
+
+.threePaper {
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+}
+
+.gameCard {
+    width: 33.3333%;
+    background-image: url(Images/Categories/Adventure/pin_paper_note.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center; 
+}
+
+.gameCard:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease;
+}
+
+.gameCard:nth-child(2) {
+    position: relative;
+    left: 25%;
+    top: 5vw;
+}
+
+.gameCard:nth-child(3) {
+    position: relative;
+    left: 70%;
+    bottom: 30vw;
+}
+
+.gameCard .item {
+    padding: 8% 5% 10% 5%;
+    text-align: center;
+}
+
+.gameCard img {
+    width: 90%;
+}
+
+.gameCard h1 {
+    font-family: cursive;
+    font-size: 2vw;
+    color: black;
+}
+
+/*Laptop 1024*/
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 1% 7% 0 7%;
+    }
+
+    .title {
+        font-size: 4vw;
+    }
+
+    .gameCard {
+        width: 40%;
+    }
+
+    .gameCard:nth-child(2) {
+        position: relative;
+        left: 20%;
+    }
+
+    .gameCard:nth-child(3) {
+        position: relative;
+        left: 65%;
+        bottom: 40vw;
+    }
+
+    .gameCard h1 {
+        font-size: 2.3vw;
+    }
+}
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1% 5% 0 5%;
+    }
+
+    .title {
+        font-size: 4.8vw;
+    }
+
+    .gameCard {
+        width: 42%;
+    }
+
+    .gameCard:nth-child(2) {
+        position: relative;
+        left: 15%;
+        top: 10vw;
+    }
+
+    .gameCard:nth-child(3) {
+        position: relative;
+        left: 60%;
+        bottom: 45vw;
+    }
+
+    .gameCard h1 {
+        font-size: 2.8vw;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px) {
+    .title {
+        font-size: 8vw;
+    }
+
+    .gameCard {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .gameCard:nth-child(2) {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .gameCard:nth-child(3) {
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+
+    .gameCard h1 {
+        font-size: 6vw;
+    }
+}
+
+/*Special*/
+@media screen and (max-width: 567px) {
+    .container {
+        margin-top: 38px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .container {
+        margin-top: 26px;
+    }
+}
+
+
+
+
+

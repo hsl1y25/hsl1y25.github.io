@@ -1,0 +1,155 @@
+body {
+    background-image: url(Images/Categories/Relaxing/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.title {
+    text-align: center;
+    color: black;
+}
+
+.title h1 {
+    font-size: 3.5vw;
+}
+
+.title p {
+    font-size: 2vw;
+    font-family: cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 35px 10% 70px 10%;
+    gap: 50px;
+}
+
+.container a {
+    display: flex;
+    position: relative;
+    transition: transform 0.4s ease;
+}
+
+.container a::before {
+    content: '';
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.container a:hover {
+    transform: scale(1.02);
+}
+
+.container .card1::before {
+    background-image: url(Images/Categories/Relaxing/background1.png);
+    filter: brightness(0.6);
+}
+
+.container .card2::before {
+    background-image: url(Images/Categories/Relaxing/background2.png);
+    filter: brightness(0.6);
+}
+
+.container .card3::before {
+    background-image: url(Images/Categories/Relaxing/background3.png);
+    filter: brightness(0.6);
+}
+
+.container .card1 .text,
+.container .card2 .text,
+.container .card3 .text {
+    width: 60%;
+    padding: 40px;
+}
+
+.container .card1 img,
+.container .card2 img,
+.container .card3 img {
+    width: 40%;
+    padding: 40px;
+}
+
+/*Laptop 1024*/
+@media screen and (max-width: 1024px) {
+    .title h1 {
+        font-size: 4vw;
+    }
+
+    .title p {
+        font-size: 2.5vw;
+    }
+
+    .container {
+        margin: 35px 2% 70px 2%;
+    }
+}
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+    .title h1 {
+        font-size: 7vw;
+    }
+
+    .title p {
+        font-size: 4vw;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px) {
+    .title h1 {
+        font-size: 10vw;
+    }
+
+    .title p {
+        font-size: 6vw;
+    }
+
+    .container {
+        margin: 30px 2% 50px 2%;
+    }
+}
+
+/*Special*/
+@media screen and (max-width: 940px) {
+    .container a {
+        flex-direction: column;
+    }
+
+    .container .card1 .text,
+    .container .card2 .text,
+    .container .card3 .text {
+        width: 90%;
+        padding:  2% 5%;
+    }
+
+    .container .card1 img,
+    .container .card2 img,
+    .container .card3 img {
+        width: 90%;
+        padding: 2% 5%;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .title {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .title {
+        margin-top: 35px;
+    }
+}
+

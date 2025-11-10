@@ -1,0 +1,91 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(10, 22, 24);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 90px 0 0 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li:hover {
+    filter: brightness(0.8);
+}
+
+.logo {
+    width: clamp(70px, 5vw, 120px);
+    height: auto;
+}
+
+.topContainer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: black;
+}
+
+.topLeftContainer{
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+    max-width: min-content;
+    font-size: large;
+}
+
+.topRightContainer {
+    position: relative;
+    left: 50px;
+}
+
+.topRightContainer ul {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;  
+}
+
+.topRightContainer ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 8px;
+}
+
+
+
+.footer {
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    padding: 10px 10%; 
+    box-sizing: border-box;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+@media screen and (max-width: 410px) {
+    .topLeftContainer{
+        font-size: small;
+    }
+
+    .topRightContainer {
+        font-size: small;
+        position: relative;
+        left: 5px;
+    }
+}
+
+
+
