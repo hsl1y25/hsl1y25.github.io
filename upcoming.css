@@ -25,14 +25,15 @@
     margin: 30px 10%;
 }
 
-.row {
+.row1,
+.row2 {
     display: flex;
     width: 100%;
     align-items: stretch;
 }
 
 .left {
-    border-right: 4px solid white;
+    border-right: 4px solid rgb(254, 51, 51);
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -43,6 +44,7 @@
     text-align: right;
     font-size: 2vw;
     padding-right: 30px;
+    color: rgb(254, 51, 51);
 }
 
 .left .game {
@@ -67,6 +69,10 @@
     padding: 0 3%;
 }
 
+.left .game .text h1 {
+    border-bottom: 2px solid yellow;
+}
+
 .left .game .text ul {
     margin: 0;
     padding: 0;
@@ -87,7 +93,7 @@
 }
 
 .right {
-    border-left: 4px solid white;
+    border-left: 4px solid rgb(254, 51, 51);
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -98,6 +104,7 @@
     text-align: left;
     font-size: 2vw;
     padding-left: 30px;
+    color: rgb(254, 51, 51);
 }
 
 .right .game {
@@ -120,6 +127,10 @@
 
 .right .game .text {
     padding: 0 3%;
+}
+
+.right .game .text h1 {
+    border-bottom: 2px solid yellow;
 }
 
 .right .game .text ul {
@@ -216,21 +227,38 @@
     }
     
     .container {
-        margin: 15px 1%;
+        margin: 15px 5%;
+    }
+
+    .row1 {
+        flex-direction: column;
+    }
+
+    .row2 {
+        flex-direction: column-reverse;
+    }
+
+    .row1, 
+    .row2 {
+        border-left: 4px solid rgb(254, 51, 51);
+        padding-top: 30px;
     }
 
     .left {
-        border-right: 2px solid white;
+        border-right: 0px;
+        width: 100%;
     }
 
     .right {
-        border-left: 2px solid white;
+        border-left: 0px;
+        width: 100%;
     }
 
     .left .date, 
     .right .date {
         font-size: 5vw;
         padding: 10px;
+        text-align: left;
     }
 
     .left .game {
